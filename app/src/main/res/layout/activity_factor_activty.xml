@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/appbar_color"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="@dimen/_51sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+    <RelativeLayout
+        android:id="@+id/buy_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/PrimaryDark"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:id="@+id/Buy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="خرید سفارشات"
+            android:textColor="@color/White"
+           android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:textSize="@dimen/_15sdp"
+            fontPath="fonts/SansLight.ttf"/>
+
+        <!-- order cost-->
+        <TextView
+            android:id="@+id/total_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مجموع هزینه سفارشات :  "
+            android:textColor="@color/White"
+           android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="3dp"
+            android:textSize="@dimen/_8sdp"
+            fontPath="fonts/SansLight.ttf"/>
+
+        <TextView
+            android:id="@+id/total_count_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/White"
+            android:layout_toLeftOf="@+id/total_count_tv"
+            android:textSize="@dimen/_10sdp"
+            android:layout_margin="3dp"
+            fontPath="fonts/SansLight.ttf"/>
+
+        <!-- postal cost-->
+
+        <TextView
+            android:id="@+id/postal_cost_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="هزینه پست :  "
+            android:textColor="@color/White"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+           android:layout_below="@+id/total_count_tv"
+            android:layout_margin="3dp"
+            android:textSize="@dimen/_8sdp"
+            fontPath="fonts/SansLight.ttf"/>
+
+        <TextView
+            android:id="@+id/postal_cost_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/White"
+            android:layout_toLeftOf="@+id/postal_cost_tv"
+            android:layout_below="@+id/total_count_tv"
+            android:textSize="@dimen/_10sdp"
+            android:layout_margin="3dp"
+            fontPath="fonts/SansLight.ttf"/>
+
+        <!-- order cost + postal cost -->
+
+        <TextView
+            android:id="@+id/orer_postal_cost_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="هزینه نهایی سفارش :  "
+            android:textColor="@color/White"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/postal_cost_tv"
+            android:layout_margin="3dp"
+            android:textSize="@dimen/_8sdp"
+            fontPath="fonts/SansLight.ttf"/>
+
+        <TextView
+            android:id="@+id/orer_postal_cost_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/White"
+            android:layout_toLeftOf="@+id/orer_postal_cost_tv"
+            android:layout_below="@+id/postal_cost_tv"
+            android:textSize="@dimen/_10sdp"
+            android:layout_margin="3dp"
+            fontPath="fonts/SansLight.ttf"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    tools:ignore="MissingPrefix"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/_6sdp"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/order_date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تاریخ سفارش :"
+                fontPath="fonts/SansLight.ttf"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/Black"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <TextView
+                android:id="@+id/order_date_value_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1395/05/14"
+                android:layout_toLeftOf="@+id/order_date_txt"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp" />
+
+
+            <TextView
+                android:id="@+id/order_price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="قیمت سفارش : "
+                fontPath="fonts/SansLight.ttf"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/Black"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/order_price_value_txt"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <TextView
+                android:id="@+id/order_price_value_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20000"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:id="@+id/order_detail_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                android:maxLines="4"
+                fontPath="fonts/SansLight.ttf"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/Black"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/order_date_txt"
+                android:layout_margin="@dimen/_8sdp"/>
+
+            <TextView
+                android:id="@+id/order_status_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ggggggggggggggggggg"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/order_detail_txt"
+                android:layout_margin="@dimen/_8sdp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
